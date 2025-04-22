@@ -13,6 +13,9 @@ Learn different ways to convert a string to a number in JavaScript.
 ### 🔹 Instructions:
 Try each method below using the string `"123"` and print the result using `console.log()`.
 
+<details>
+  <summary>🔑 Click to see the solution</summary>
+
 ### 🔸 Methods:
 
 ```javascript
@@ -29,6 +32,8 @@ let num3 = parseFloat("123.45");
 let num4 = +"123";
 
 console.log(num1, num2, num3, num4);
+
+</details>
 ```
 
 ---
@@ -41,6 +46,9 @@ Learn how to create arrays and access object properties inside them.
 ### 🔹 Instructions:
 1. Create an array of student objects. Each object should have a `name` and `age`.
 2. Use a loop to print each student's name.
+
+<details>
+  <summary>🔑 Click to see the solution</summary>
 
 ### 🔸 Example:
 
@@ -55,6 +63,8 @@ let students = [
 students.forEach(function(student) {
   console.log(student.name);
 });
+
+</details>
 ```
 
 ---
@@ -74,7 +84,8 @@ Create variables for:
 - Your favorite number (number)
 
 Print a sentence using these variables.
-
+<details>
+  <summary>🔑 Click to see the solution</summary>
 ```javascript
 let name = "Zara";
 let age = 20;
@@ -82,6 +93,7 @@ let color = "blue";
 let favoriteNumber = 7;
 
 console.log("Hi, my name is " + name + ". I am " + age + " years old. My favorite color is " + color + " and my favorite number is " + favoriteNumber + ".");
+</details>
 ```
 
 ---
@@ -97,11 +109,16 @@ Using your `favoriteNumber`, do the following:
 
 Print each result.
 
+<details>
+  <summary>🔑 Click to see the solution</summary>
+
 ```javascript
 console.log("Multiplied by 2: " + (favoriteNumber * 2));
 console.log("Add 10: " + (favoriteNumber + 10));
 console.log("Subtract 5: " + (favoriteNumber - 5));
 console.log("Divide by 3: " + (favoriteNumber / 3));
+
+</details>
 ```
 
 ---
