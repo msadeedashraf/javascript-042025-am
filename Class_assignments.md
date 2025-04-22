@@ -16,8 +16,6 @@ Try each method below using the string `"123"` and print the result using `conso
 <details>
   <summary>🔑 Click to see the solution</summary>
 
-### 🔸 Methods:
-
 ```javascript
 // Using Number()
 let num1 = Number("123");
@@ -32,9 +30,9 @@ let num3 = parseFloat("123.45");
 let num4 = +"123";
 
 console.log(num1, num2, num3, num4);
+```
 
 </details>
-```
 
 ---
 
@@ -50,8 +48,6 @@ Learn how to create arrays and access object properties inside them.
 <details>
   <summary>🔑 Click to see the solution</summary>
 
-### 🔸 Example:
-
 ```javascript
 let students = [
   { name: "Ali", age: 20 },
@@ -63,9 +59,9 @@ let students = [
 students.forEach(function(student) {
   console.log(student.name);
 });
+```
 
 </details>
-```
 
 ---
 
@@ -84,8 +80,10 @@ Create variables for:
 - Your favorite number (number)
 
 Print a sentence using these variables.
+
 <details>
   <summary>🔑 Click to see the solution</summary>
+
 ```javascript
 let name = "Zara";
 let age = 20;
@@ -93,8 +91,9 @@ let color = "blue";
 let favoriteNumber = 7;
 
 console.log("Hi, my name is " + name + ". I am " + age + " years old. My favorite color is " + color + " and my favorite number is " + favoriteNumber + ".");
-</details>
 ```
+
+</details>
 
 ---
 
@@ -117,9 +116,9 @@ console.log("Multiplied by 2: " + (favoriteNumber * 2));
 console.log("Add 10: " + (favoriteNumber + 10));
 console.log("Subtract 5: " + (favoriteNumber - 5));
 console.log("Divide by 3: " + (favoriteNumber / 3));
+```
 
 </details>
-```
 
 ---
 
@@ -130,12 +129,14 @@ Use `prompt()` to take input from the user.
 <details>
   <summary>🔑 Click to see the solution</summary>
 
-
 ```javascript
 let name = prompt("What is your name?");
 let age = prompt("What is your age?");
 console.log("Hello " + name + ", you are " + age + " years old!");
-</details> 
 ```
 
----
+</details>
+
+
+
+Happy coding! 🚀
