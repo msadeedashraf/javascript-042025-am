@@ -110,10 +110,15 @@ console.log("Divide by 3: " + (favoriteNumber / 3));
 
 Use `prompt()` to take input from the user.
 
+<details>
+  <summary>🔑 Click to see the solution</summary>
+
+
 ```javascript
 let name = prompt("What is your name?");
 let age = prompt("What is your age?");
 console.log("Hello " + name + ", you are " + age + " years old!");
+</details> 
 ```
 
 ---
