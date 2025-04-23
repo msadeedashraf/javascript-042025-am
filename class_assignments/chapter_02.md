@@ -1,5 +1,5 @@
 
-# 💻 JavaScript Beginner Practice: Strings & Numbers
+# 💻 JavaScript Beginner Practice: Chapter 2 Strings & Numbers
 
 This assignment is for students who have just completed learning **strings**, **numbers**, and **variables** in JavaScript. It includes practical tasks to build confidence.
 
