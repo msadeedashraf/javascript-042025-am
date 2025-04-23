@@ -33,7 +33,9 @@ Refactor the function.html to use the switch statement [switch](https://www.w3sc
 Refactor BankAccount [Version 0](https://github.com/msadeedashraf/javascript-102024-am/tree/main/day12/BankAccount) 
 
 ![V0](/assets/projects/Balance-Manager-V0.png) 
+
 to Version 1 
+
 ![V1](/assets/projects/Balance-Manager-V1.png) 
 
 ### Assignment # 11
