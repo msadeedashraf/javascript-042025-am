@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Output</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+    <p id="demo">What's the first message</p>
+    <p id="demo1">What's the second message</p>
+
+    <button type="button" onclick="message()">Try it</button>
+
+    <script>
+        
+      alert("The total is : " + (5 + 6));
+
+      console.log("The total is : " + (5 + 6));
+
+      function message() {
+        document.getElementById("demo").innerHTML =
+          "We are learning Javascript,";
+        document.getElementById("demo1").innerHTML = "at CBC.";
+      }
+    </script>
+  </body>
+</html>

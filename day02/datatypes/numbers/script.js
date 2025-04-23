@@ -3,6 +3,10 @@
 //Declare two variable num1, num2 and assign 10 and 20 respectively
 //Add num1 and num2 and move the resultant into another variable called result
 
+//All JavaScript variables must be identified with unique names.
+
+//These unique names are called identifiers.
+
 num1 = 30;
 num2 = 5;
 
