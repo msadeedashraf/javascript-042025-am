@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Function Calculator</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        body {
+          background: linear-gradient(to right, #8e2de2, #4a00e0);
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .card {
+          background-color: #fff;
+          max-width: 500px;
+          margin: 100px auto;
+          padding: 30px;
+          border-radius: 15px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+  
+        h1 {
+          text-align: center;
+          color: #4a00e0;
+          margin-bottom: 20px;
+        }
+  
+        label {
+          font-weight: 600;
+          color: #333;
+        }
+  
+        input {
+          width: 100%;
+          padding: 12px;
+          margin: 10px 0 20px;
+          border: 2px solid #ddd;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+        }
+  
+        input:focus {
+          border-color: #4a00e0;
+          outline: none;
+        }
+  
+        .btn {
+          background-color: #4a00e0;
+          color: white;
+          padding: 12px;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          width: 100%;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          text-transform: uppercase;
+        }
+  
+        .btn:hover {
+          background-color: #8e2de2;
+        }
+  
+        .result {
+          text-align: center;
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 20px;
+          color: #4a00e0;
+        }
+        .output{
+            font-size: 2rem;
+            color: black;
+        }
+        select{
+            width: 100%;
+          padding: 12px;
+          margin: 10px 0 20px;
+          border: 2px solid #ddd;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+        }
+      </style>
+</head>
+<body>
+
+    <div class="card">
+
+    
+
+    <h1>4 Functions Calculator</h1>
+    
+    <label for="num1">Input the first Number</label>
+    <input type="number" id="num1" value="10" />
+    <br />
+
+    <label for="num2">Input the Second Number</label>
+    <input type="number" id="num2" value="10" />
+    <br />
+    <label for="operator">Choose the operator</label>
+    <select  name="operator" id="operator">
+        <option value="A">Add</option>
+        <option value="M">Multiply</option>
+        <option value="S">Subtract</option>
+        <option value="D">Divide</option>
+      </select>
+
+<br>
+<button class="btn"  onclick="calculate()">Calculate</button>
+<br>
+<label class="result" for="result">Output : <span class="output" id="result">0</span></label>
+
+   
+   
+</div>
+   
+   
+   <script>
+
+        function calculate()
+        {
+
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let method = document.getElementById('operator').value;
+           // console.log(num1,num2 , method)
+
+            if (method ==  "A")
+            {
+
+                //document.getElementById('result').innerHTML = parseInt(num1) + parseInt(num2) ;
+                document.getElementById('result').innerHTML = add(num1, num2);
+            }
+            else if (method == "M")
+            {
+                //document.getElementById('result').innerHTML = parseInt(num1) * parseInt(num2) ;
+                document.getElementById('result').innerHTML = mul(num1, num2);
+            }
+            else if (method == "D")
+            {
+                //document.getElementById('result').innerHTML = parseInt(num1)/ parseInt(num2) ;
+                document.getElementById('result').innerHTML = div(num1, num2) ;
+            }
+
+            else if (method == "S")
+            {
+                //document.getElementById('result').innerHTML = parseInt(num1)- parseInt(num2) ;
+                document.getElementById('result').innerHTML = sub(num1, num2) ;
+            }
+
+
+
+
+            function add(num1 , num2)
+            {
+                return parseInt(num1)+ parseInt(num2);
+                
+            }
+
+            function sub(num1 , num2)
+            {
+                return parseInt(num1)- parseInt(num2);
+                
+            }
+            function mul(num1 , num2)
+            {
+                return parseInt(num1)* parseInt(num2);
+                
+            }
+            function div(num1 , num2)
+            {
+                return parseInt(num1)/ parseInt(num2);
+                
+            }
+
+
+
+        }
+
+    </script>
+</body>
+</html>

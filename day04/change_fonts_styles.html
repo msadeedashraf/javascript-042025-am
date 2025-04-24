@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions and Styles</title>
+
+    <style>
+
+.red{
+
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+
+}
+
+.green{
+
+background-color: rgb(0, 255, 13);
+border: none;
+border-radius: 10px;
+padding: 15px 30px;
+
+}
+
+.blue{
+
+background-color: rgb(8, 0, 255);
+border: none;
+border-radius: 10px;
+padding: 15px 30px;
+
+}
+
+.yellow{
+
+background-color: rgb(255, 242, 0);
+border: none;
+border-radius: 10px;
+padding: 15px 30px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+    <h1>Functions and Styles with DRY</h1>
+    <h2 id="title">Change the font for the test in the paragraph </h2>
+    <br>
+    <h3>Using Functions and DRY</h3>
+    <p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit mollitia assumenda repellat doloribus animi aspernatur sunt rem beatae ipsa ipsum?</p>
+
+    <button onclick="changeFonts('32px')">Click me to increase the Fonts</button>
+    <button onclick="changeFonts('16px')">Click me to decrease the Fonts</button>
+<hr>
+    <button class="red" onclick="changeColor('red')"></button>
+    <button class="blue" onclick="changeColor('blue')"></button>
+    <button class="green" onclick="changeColor('green')"></button>
+    <button class="yellow" onclick="changeColor('yellow')"></button>
+
+
+<script>
+
+function changeFonts(myFontSize)
+{
+    document.getElementById('demo').style.fontSize=myFontSize
+
+}
+
+function changeColor(myColor)
+{
+
+    document.getElementById('title').style.color=myColor ;
+}
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
