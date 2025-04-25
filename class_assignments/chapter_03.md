@@ -158,4 +158,66 @@ checkNumber(-5);
 
 </details>
 
+
+
+
+<details>
+  <summary>🔑 Click to see the solution</summary>
+
+```javascript
+function calculate() {
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        var method = document.getElementById("operator").value;
+
+        switch (method) {
+          case "A":
+            document.getElementById("result").innerHTML = add(
+              parseFloat(num1),
+              parseFloat(num2)
+            );
+            break;
+          case "M":
+            document.getElementById("result").innerHTML = multiply(
+              parseFloat(num1),
+              parseFloat(num2)
+            );
+            break;
+          case "S":
+            document.getElementById("result").innerHTML = subtract(
+              parseFloat(num1),
+              parseFloat(num2)
+            );
+            break;
+          case "D":
+            document.getElementById("result").innerHTML = divide(
+              parseFloat(num1),
+              parseFloat(num2)
+            );
+            break;
+
+          default:
+          // code block
+        }
+      }
+
+      function add(num1, num2) {
+        return (num1 + num2).toFixed(4);
+      }
+
+      function subtract(num1, num2) {
+        return (num1 - num2).toFixed(4);
+      }
+
+      function multiply(num1, num2) {
+        return (num1 * num2).toFixed(4);
+      }
+
+      function divide(num1, num2) {
+        return (num1 / num2).toFixed(4);
+      }
+```
+
+</details>
+
 Happy coding! 🚀
