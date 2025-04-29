@@ -38,6 +38,10 @@ to Version 1
 
 ![V1](/assets/projects/Balance-Manager-V1.png) 
 
+to Version 2 
+
+![V1](/assets/projects/Balance-Manager-V2.png) 
+
 ### Assignment # 11
 Creating Analog Clock. [Clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=2s&ab_channel=WebDevSimplified)
 
