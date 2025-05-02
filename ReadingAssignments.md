@@ -5,18 +5,20 @@
 [Scope in JavaScript](https://www.freecodecamp.org/news/scope-in-javascript-global-vs-local-vs-block-scope/)
 
 ### JavaScript Scope
+
 [JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
 
 ### How to Use LocalStorage in JavaScript
 
 [How to Use LocalStorage in JavaScript](https://www.freecodecamp.org/news/use-local-storage-in-modern-applications/)
 
-
 ### Window: localStorage property
 
 [W3School](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
 
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
 
 ### String Interpolation and Ternary Operator
 [String Interpolation and Ternary Operator](https://www.freecodecamp.org/news/javascript-string-format-how-to-use-string-interpolation-in-js/)
