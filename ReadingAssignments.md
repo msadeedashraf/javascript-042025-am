@@ -1,6 +1,12 @@
 ### Snake Case VS Camel Case VS Pascal Case VS Kebab Case 
 [Link](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/)
 
+### Scope in JavaScript – Global vs Local vs Block Scope Explained
+[Scope in JavaScript](https://www.freecodecamp.org/news/scope-in-javascript-global-vs-local-vs-block-scope/)
+
+### JavaScript Scope
+[JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
+
 ### String Interpolation and Ternary Operator
 [String Interpolation and Ternary Operator](https://www.freecodecamp.org/news/javascript-string-format-how-to-use-string-interpolation-in-js/)
 

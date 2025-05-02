@@ -1,5 +1,18 @@
-let balance = 2000;
+/*
+//Global vs Local
+  let lastName = "Sam"  //Global Variable
+  console.log(lastName)
+
+  {
+    let firstName = "AB" //Local Variable 
+    console.log(firstName + " " + lastName)
+  }
+
+  console.log("Ammy" + " " + lastName)
+*/
+let balance = 2000;  //Global Variable
 document.getElementById("balance").textContent = balance;
+loadTransactionsFromLocalStorage();
 
 
 
@@ -37,10 +50,33 @@ function makeTransaction()
 
 
      addTransaction(type, description, amount);
-      
+     
+     saveToLocalStorage(); 
       
 
 }
+
+
+
+function saveToLocalStorage()
+{
+// alert("hello from the local storage")
+localStorage.setItem("balance", balance);
+localStorage.setItem("transactions" , document.getElementById("transactions").innerHTML)
+
+}
+
+
+function loadTransactionsFromLocalStorage()
+{
+  const storedTransactions = localStorage.getItem('transactions');
+  if (storedTransactions)
+  {
+    document.getElementById('transactions').innerHTML = storedTransactions
+
+  }
+}
+
 
 function withdraw(amount)
 {
@@ -75,6 +111,7 @@ function addTransaction(type, description, amount) {
     <td>$${balance}</td>
   `;
   transactionList.appendChild(transactionRow);
+
 }
 
 
@@ -96,6 +133,9 @@ function handleFileUpload(event) {
         addTransaction("Credit", description.trim(), amountNum);
       }
     });
+
+    saveToLocalStorage();
+
   };
 
   reader.readAsText(file);
