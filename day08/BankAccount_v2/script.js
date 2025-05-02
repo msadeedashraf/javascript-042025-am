@@ -115,12 +115,13 @@ function deposit(amount)
 //alert(`${myBalance} my balnce into deposit function and the amount is ${amount}`)
 
 myBalance += amount;
-//alert(`New Total ${myBalance}` );
-document.getElementById("balance").innerHTML = myBalance;
+alert(`New Total ${myBalance}` );
+
+document.getElementById("balance").textContent = myBalance;
 }
 
 function withdraw(amount)
 {
     myBalance -= amount;
-    document.getElementById("balance").innerHTML = myBalance;
+    document.getElementById("balance").textContent = myBalance;
 }
