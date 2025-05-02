@@ -10,6 +10,9 @@
 
   console.log("Ammy" + " " + lastName)
 */
+
+//https://github.com/msadeedashraf/javascript-042025-am/blob/main/ReadingAssignments.md#scope-in-javascript--global-vs-local-vs-block-scope-explained
+
 let balance = 2000;  //Global Variable
 document.getElementById("balance").textContent = balance;
 loadTransactionsFromLocalStorage();
@@ -141,47 +144,6 @@ function handleFileUpload(event) {
   reader.readAsText(file);
   
 }
-
-
-/*
-function handleFileUpload(event)
-{
-  const file = event.target.files[0];
-  const reader = new FileReader();
-
-reader.onload = function (e) {
-const rows = e.target.result.split("\n");
-rows.forEach ((row)=>{ 
-  const [date, desc, type , amount] = row.split(",");
-  const amountNum = parseFloat(amount);
-
-  if (type.trim() === "Debit" && amountNum <= balance )
-  {    withdraw(amountNum)
-    addTransaction("Debit",desc.trim(),amountNum)
-  }  else if (type.trim() === "Credit") 
-  {
-    deposit(amountNum)
-    addTransaction("Credit",desc.trim(),amountNum)
-  }
-
-}
-
-);
-
-}
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
 
 
 function toggleTransactionFields() {
