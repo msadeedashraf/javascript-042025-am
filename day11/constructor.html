@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor</h1>
+
+    <script>
+      
+      /*const car = {
+            Make : "",
+            Model : "",
+            Color: "",
+            Year : ""
+        }
+*/
+        //Constructor Method
+        function Car(make,model, color, year )
+        {
+            this.Make = make,
+            this.Model = model,
+            this.Color = color,
+            this.Year = year
+        }
+
+        const myFord = new Car("Ford", "escape", "Blue", 2025);
+        const myHonda = new Car("Honda", "CRV", "White", 2024);
+        
+        const myToyota = new Car("Toyota", "Rav4", "Red", 2023);
+
+        console.log(myFord.Color)
+        console.log(myHonda.Color)
+        console.log(myToyota.Color)
+
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Object</h1>
+
+    <p id="demo"></p>
+    
+    <script>
+        const car = {
+            make : "Ford",
+            model : 2025,
+            MaxSpeed : 300
+        };
+        console.log(car.make);
+
+        const person = {
+
+            firstName : "Chris",
+            lastName : "Mat",
+
+            fullName : function () { return this.firstName + ' '+ this.lastName }
+
+        };
+
+        const person2 = {};
+        // Add Properties
+        person2.firstName = "John";
+        person2.lastName = "Doe";
+        person2.age = 50;
+        person2.eyeColor = "blue";
+
+        const paerson3 = new Object();
+
+        console.log(person["lastName"])
+        console.log(person.firstName);
+        //console.log(person.firstName + ' '+ person["lastName"])
+        console.log(person.fullName())
+
+
+// Create an Object
+const person4 = {
+  firstName: "Paul",
+  lastName: "Miller",
+  id: 5566,
+};
+
+// Add a Method
+person4.fullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+// Display Object Data
+document.getElementById("demo").innerHTML =
+"My father is " + person4.fullName().toUpperCase(); 
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+
+
+    <h1>Credit Card</h1>
+    <label for="cardno">Card</label>
+    <input type="text" id="cardno" maxlength="50"  value="1222-1213-1213-2001"  >
+   
+    <br>
+    <label for="seperator">Seperator</label>
+    <select name="" id="seperator">
+        <option value="-">-</option>
+        <option value="|">|</option>
+        <option value="$">$</option>
+        
+       
+    </select>
+    <br>
+    <button onclick="myCreditCardConvertor()" id="convert">Convert</button>
+    <br>
+    <label for="result">Converted No : </label>
+    <span id="result"></span>
+
+    
+<script>
+
+
+
+function myCreditCardConvertor()
+{
+    let outputColor = "color:red; font-size:20px;"
+
+    document.bgColor = "red";
+    const cardNumber = document.getElementById("cardno");
+    const mySeperator = document.getElementById("seperator");
+    console.log(cardNumber.value, outputColor);
+    //console.log(mySeperator.value);
+
+    var myResult = creditCardConvertor(cardNumber.value, mySeperator.value);
+    document.getElementById("result").innerHTML = myResult;
+}
+  
+
+
+   
+function creditCardConvertor(myCardNo , seperator)
+{
+    let text = myCardNo;
+    let myCardLen = text.length;
+
+const myCardArray = text.split(seperator)
+
+console.log(myCardArray.length);
+
+console.log(text.substring(myCardLen-4))
+
+var result="";
+for (a = 0; a<= myCardArray.length - 2; a++ )
+{
+     var myConterdCard =  "*".repeat(myCardArray[a].length);
+     result += myConterdCard +"-";
+    
+    }
+    
+    result += text.substring(myCardLen-4)
+    console.log(result)
+
+    text = text.substring(myCardLen-4)
+    console.log(myCardLen-4)
+
+    text = text.padStart(myCardLen,"*");
+    //****-****-****-2131
+    
+    //document.getElementById("demo").innerHTML = result;
+    return result;
+}
+
+
+</script>
+
+
+    
+</body>
+</html>

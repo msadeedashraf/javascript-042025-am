@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <h1>Array</h1>
+
+<div id="demo">
+
+   
+
+</div>
+
+
+<script>
+
+
+const students = [  "Safar",
+    "lidya",
+    "Fowsia",
+    "Hussain",
+    "Iyo",
+    "Alan",
+    "CJ",
+    "Charline",
+    "Suzane",
+    "Amber",
+    "Salah"];
+
+    const teacher = "Sam";
+
+        let myhtml = `<h3>Good Morning ${teacher}</h3> <ol>`;
+            
+            for (s = 0 ; s <students.length; s++ )
+            {
+                myhtml += `<li>${students[s]}</li>`;
+
+            }
+
+            myhtml +=`</ol>`;
+
+document.getElementById('demo').innerHTML= myhtml;
+
+
+
+
+
+
+
+
+
+
+
+
+    //Array Destructuring 
+    const person = ["Chris", "Paul", 35];
+
+    const [firstName, lastName, age] = person
+
+    console.log(firstName)
+
+    </script>
+    
+</body>
+</html>

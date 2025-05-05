@@ -32,3 +32,14 @@
 [JavaScript Template Strings](https://www.w3schools.com/js/js_string_templates.asp)
 
 [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+
+### JavaScript JSON
+
+[JSON](https://www.w3schools.com/js/js_json.asp)
+
+### Array Destructuring 
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
+
+[](https://www.w3schools.com/react/react_es6_destructuring.asp)
