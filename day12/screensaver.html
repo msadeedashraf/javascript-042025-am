@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Saver</title>
+    <style>
+        *{margin: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+            .timedisplay {
+            font-size: 4em;
+            font-weight: bold;
+
+        
+        }
+
+        body, html{
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            z-index: -1;
+            transition: background-image 1s ease-in-out;
+        }
+
+        .timedisplay
+        {
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="background"  id="background"></div>
+    <div class="timedisplay"  id="timedisplay"></div>
+    <script>
+
+      //const arrayName = ["", "",""] 
+        //const arrayName = [1,2,3,30]
+
+        const images = [
+            "https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                        "https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://images.unsplash.com/photo-1543877087-ebf71fde2be1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+           
+            "https://images.unsplash.com/photo-1501265976582-c1e1b0bbaf63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        ];
+
+
+
+
+
+
+
+
+
+
+function updateBackground()
+{
+    const background  = document.getElementById("background");
+    const randomIndex = Math.floor(Math.random()*images.length );
+
+   // console.log(randomIndex);
+   // console.log(`url('${images[randomIndex]}')`);
+
+    background.style.backgroundImage = `url(${images[randomIndex]})`;
+}
+
+function updateTime()
+{
+    const timeDisplay = document.getElementById("timedisplay");
+    const currentTime = new Date();
+    const hours = currentTime.getHours().toString().padStart(2, '0');
+    const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+    const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+    timeDisplay.textContent= `${hours}:${minutes}:${seconds}`;
+
+}
+
+
+setInterval(updateBackground, 5000)
+setInterval(updateTime, 1000)
+
+    </script>
+    
+</body>
+</html>
