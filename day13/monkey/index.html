@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey List</title>
+</head>
+<body>
+
+    <h1>Monkey List</h1>
+    <div id="demo">
+
+    </div>
+    
+    <script>
+        fetch("https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json")
+    .then((response) => response.json())
+    .then((data) => { 
+        console.log(data) ;
+        const monkeys = data;
+        getMonkeys(monkeys);
+ 
+    })
+
+    function getMonkeys(monkeys)
+    {
+        let myHTML = "";
+
+for(a = 0 ; a <monkeys.length ; a++)
+{
+    myHTML += `<div class="job-list">
+        <img src=${monkeys[a].Image} alt="...">
+            <h3>${monkeys[a].Name}</h3>
+            
+            <p>${monkeys[a].Location}</p>
+            <p>${monkeys[a].Details}</p>
+            
+            
+
+        </div> <hr>`;
+}
+
+
+document.getElementById('demo').innerHTML = myHTML;
+
+
+
+    }
+    </script>
+</body>
+</html>
