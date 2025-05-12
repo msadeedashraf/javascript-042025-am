@@ -44,6 +44,16 @@
 
 [](https://www.w3schools.com/react/react_es6_destructuring.asp)
 
+### APIs
+
+[APIs](https://www.w3schools.com/js/js_api_intro.asp)
+
+[MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
+
+### How to Call an API in JavaScript – with Examples
+
+[Call an API](https://www.freecodecamp.org/news/make-api-calls-in-javascript/)
+
 
 ### Bootstrap, Tailwind, Material UI: The Battle of Styling Titans
 
